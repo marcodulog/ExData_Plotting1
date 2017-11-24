@@ -21,13 +21,11 @@ sub2 <- as.numeric(dt$Sub_metering_2)
 sub3 <- as.numeric(dt$Sub_metering_3)
 datetime <- as_datetime(dt$DateTime) #dates
 
-
-#plotting the data
-
 gap <- as.numeric(dt$Global_active_power) 
 volt<- as.numeric(dt$Voltage)
 grp <- as.numeric(dt$Global_reactive_power)
 
+#start the graphs
 png("plot4.png", width=480, height=480)
   par(mfrow=c(2,2))
   #first graph 
